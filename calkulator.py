@@ -57,6 +57,36 @@ def add_minus():
     entry.delete(0, "end") 
     entry.insert(0, current + "-") 
 
+def add_6(): 
+    current = entry.get()
+    entry.delete(0, "end") 
+    entry.insert(0, current + "6") 
+
+def add_7(): 
+    current = entry.get()
+    entry.delete(0, "end") 
+    entry.insert(0, current + "7") 
+
+def add_8(): 
+    current = entry.get()
+    entry.delete(0, "end") 
+    entry.insert(0, current + "8") 
+
+def add_9(): 
+    current = entry.get()
+    entry.delete(0, "end") 
+    entry.insert(0, current + "9") 
+
+def add_x(): 
+    current = entry.get()
+    entry.delete(0, "end") 
+    entry.insert(0, current + "*") 
+
+def add_gt(): 
+    current = entry.get()
+    entry.delete(0, "end") 
+    entry.insert(0, current + "/")
+
 
 
 def clear_all():
@@ -102,6 +132,25 @@ btn_5.grid(row = 2, column = 0, padx = 5, pady = 5)
 
 btn_minus = CTkButton(frame, text= "-", width=70, height=70, command=add_minus) #hi
 btn_minus.grid(row = 2, column = 1, padx = 5, pady = 5) 
+
+btn_6 = CTkButton(frame, text= "6", width=70, height=70, command=add_6) 
+btn_6.grid(row = 2, column = 2, padx = 5, pady = 5) 
+
+btn_7 = CTkButton(frame, text= "7", width=70, height=70, command=add_7) 
+btn_7.grid(row = 2, column = 3, padx = 5, pady = 5) 
+
+btn_8 = CTkButton(frame, text= "8", width=70, height=70, command=add_8) 
+btn_8.grid(row = 3, column = 0, padx = 5, pady = 5) 
+
+btn_9 = CTkButton(frame, text= "9", width=70, height=70, command=add_9) 
+btn_9.grid(row = 3, column = 1, padx = 5, pady = 5) 
+
+btn_x = CTkButton(frame, text= "*", width=70, height=70, command=add_x) 
+btn_x.grid(row = 0, column = 3, padx = 5, pady = 5)
+
+btn_gt = CTkButton(frame, text= "/", width=70, height=70, command=add_gt) 
+btn_gt.grid(row = 1, column = 0, padx = 5, pady = 5)
+
 
 
 
