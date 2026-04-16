@@ -100,7 +100,7 @@ btn_4.grid(row = 1, column = 3, padx = 5, pady = 5)
 btn_5 = CTkButton(frame, text= "5", width=70, height=70, command=add_5) 
 btn_5.grid(row = 2, column = 0, padx = 5, pady = 5) 
 
-btn_minus = CTkButton(frame, text= "-", width=70, height=70, command=add_minus) 
+btn_minus = CTkButton(frame, text= "-", width=70, height=70, command=add_minus) #hi
 btn_minus.grid(row = 2, column = 1, padx = 5, pady = 5) 
 
 
